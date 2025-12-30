@@ -230,7 +230,7 @@ Using ONLY this information, create a **personal profile README** (NOT a project
       (match, greeting, name) => {
         const capitalizedName = name
           .split(/\s+/)
-          .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+          .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
           .join(' ');
         return `# ${greeting} Ben ${capitalizedName} 🌟`;
       }

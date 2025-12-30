@@ -17,7 +17,7 @@ export default function Home() {
 
   const handleGenerate = async () => {
     if (!profileUrl.trim()) {
-      setError("Lütfen bir GitHub profil URL'si girin");
+      setError("Lütfen bir GitHub profil URL&apos;si girin");
       return;
     }
 
@@ -121,7 +121,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-              GitHub profil bilgilerinizden yola çıkarak, AI destekli profesyonel ve kişisel bir profil README'si oluşturun. 
+              GitHub profil bilgilerinizden yola çıkarak, AI destekli profesyonel ve kişisel bir profil README&apos;si oluşturun. 
               <span className="font-semibold text-slate-900 dark:text-slate-100"> Saniyeler içinde hazır!</span>
             </p>
             
@@ -150,7 +150,7 @@ export default function Home() {
                 GitHub Profil URL
               </CardTitle>
               <CardDescription className="text-base">
-                Profil URL'nizi girin (örn: <code className="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 rounded">github.com/username</code> veya sadece <code className="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 rounded">username</code>)
+                Profil URL&apos;nizi girin (örn: <code className="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 rounded">github.com/username</code> veya sadece <code className="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 rounded">username</code>)
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -158,7 +158,7 @@ export default function Home() {
                 <div className="relative flex-1">
                   <Input
                     type="text"
-                    placeholder="GitHub profil URL'sini yapıştırın..."
+                    placeholder="GitHub profil URL&apos;sini yapıştırın..."
                     value={profileUrl}
                     onChange={(e) => {
                       setProfileUrl(e.target.value);
